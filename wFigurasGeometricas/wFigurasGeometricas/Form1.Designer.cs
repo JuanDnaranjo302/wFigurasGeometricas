@@ -50,6 +50,7 @@
             this.btnCrear.TabIndex = 0;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // cmbTipoFigura
             // 
@@ -107,6 +108,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(60, 56);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // txtPosicionX
             // 
@@ -128,6 +130,7 @@
             // 
             this.txtContador.Location = new System.Drawing.Point(408, 188);
             this.txtContador.Name = "txtContador";
+            this.txtContador.ReadOnly = true;
             this.txtContador.Size = new System.Drawing.Size(100, 20);
             this.txtContador.TabIndex = 9;
             // 
@@ -147,7 +150,8 @@
             this.Controls.Add(this.cmbTipoFigura);
             this.Controls.Add(this.btnCrear);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Figuras Geometricas";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
